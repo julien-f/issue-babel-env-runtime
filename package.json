@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "(cd lib-plugin-runtime; yarn run build); (cd lib-preset-env; yarn run build)",
+    "prepare": "yarn run build",
+    "start": "node index.js"
+  },
+  "workspaces": ["lib-plugin-runtime", "lib-preset-env"]
+}
